@@ -9,6 +9,8 @@ const Concerns_Controller = require("../Controllers/ConcernsController");
 const Alumni_Controller = require("../Controllers/AlumniController");
 const Courses_Controller = require("../Controllers/CoursesController");
 const Be_DevPlus_Controller = require("../Controllers/Be_DevplusController");
+const Footer_Controller = require("../Controllers/FooterController");
+
 router.post("/add_banner", BannerController.add_Banner);
 router.get("/get_banner", BannerController.get_Banner);
 router.post("/add_about", About_Controller.add_About);
@@ -27,5 +29,6 @@ router.post("/add_courses", Courses_Controller.add_Courses);
 router.get("/get_courses", Courses_Controller.get_Courses);
 router.post("/add_be_devPlus", Be_DevPlus_Controller.add_be_devplus);
 router.get("/get_be_devPlus", Be_DevPlus_Controller.get_be_devplus);
-
+router.post("/addFooter", Footer_Controller.add_Footer);
+router.get("/getFooter", Footer_Controller.get_Footer);
 module.exports = router;
